@@ -3,7 +3,8 @@ const proxy = require('express-http-proxy');
 const cors = require('cors');
 const axios = require("axios");
 const apiUrl = 'http://52.26.193.201:3000/';
-const ovUrl = 'http://ec2-35-165-217-158.us-west-2.compute.amazonaws.com/';
+// const ovUrl = 'http://ec2-35-165-217-158.us-west-2.compute.amazonaws.com/';
+const ovUrl = 'http://localhost:3333';
 
 const app = express();
 const bodyParser = require('body-parser');
@@ -13,6 +14,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use(cors());
+
+
 
 
 app.get('/ov/*', (req, res) => {
