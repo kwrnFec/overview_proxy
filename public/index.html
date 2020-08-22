@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>KWRN Greenfield</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css" />
+    <script
+      src="https://unpkg.com/react/umd/react.production.min.js"
+      crossorigin
+    ></script>
 
-<head>
-  <title>KWRN Greenfield</title>
-</head>
+    <script
+      src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
 
-<body>
-  <div id='ovModule'></div>
-  <!-- <script src='http://ec2-35-165-217-158.us-west-2.compute.amazonaws.com/'></script> -->
-  <script src='http://localhost:3333/'></script>
-</body>
+    <script
+      src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+      crossorigin
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
 
+  <body>
+    <div id="ovModule"></div>
+    <div id="rpModule"></div>
+    <div id="qaModule"></div>
+    <div id="rrmodule"></div>
+    <script
+      src="http://ec2-35-165-217-158.us-west-2.compute.amazonaws.com/ov"></script>
+      <!-- <script src='http://localhost:3333/ov'></script> -->
+      <script src="http://ec2-3-12-148-239.us-east-2.compute.amazonaws.com/rp"></script>
+      <script src="http://ec2-18-224-182-50.us-east-2.compute.amazonaws.com/qaModule"></script>
+      <script src="http://ec2-54-172-55-163.compute-1.amazonaws.com/rrmodule"></script>
+  </body>
 </html>
